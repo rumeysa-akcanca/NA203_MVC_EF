@@ -129,6 +129,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\OgrencisController.cs" />
+    <Compile Include="Controllers\OgretmenController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -176,6 +177,12 @@
     <Content Include="Views\Ogrencis\Edit.cshtml" />
     <Content Include="Views\Ogrencis\Index.cshtml" />
     <Content Include="Views\Ogrencis\Search.cshtml" />
+    <Content Include="Views\Ogretmen\Create.cshtml" />
+    <Content Include="Views\Ogretmen\Delete.cshtml" />
+    <Content Include="Views\Ogretmen\Details.cshtml" />
+    <Content Include="Views\Ogretmen\Edit.cshtml" />
+    <Content Include="Views\Ogretmen\Index.cshtml" />
+    <Content Include="Views\Ogretmen\Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

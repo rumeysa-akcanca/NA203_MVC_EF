@@ -1,11 +1,11 @@
-﻿@model IEnumerable<OKUL_DBFIRST.Models.Ogrenci>
+﻿@model IEnumerable<OKUL_DBFIRST.Models.Ogretmen>
 
 @{
-    ViewBag.Title = "Index";
-    ViewBag.searchUrl = "/Ogrencis/Search";
+    ViewBag.Title = "Search";
+    ViewBag.searchUrl = "/Ogretmen/Search";
 }
 
-<h2>Index</h2>
+<h2>Search</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -13,34 +13,21 @@
 <table class="table">
     <tr>
         <th>
-            Öğretmen
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Ad)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Soyad)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FotoAdres)
-        </th>
         <th></th>
     </tr>
 
-@foreach (var item in Model)
-{
+@foreach (var item in Model) {
     <tr>
-        <td>
-            <p>@item.Ogretmen.Ad @item.Ogretmen.Soyad</p>
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Ad)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Soyad)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.FotoAdres)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
